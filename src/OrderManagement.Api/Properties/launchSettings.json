@@ -1,0 +1,25 @@
+{
+  "ConnectionStrings": {
+    "Default": "Server=(localdb)\\MSSQLLocalDB;Database=OrderMgmt;User Id=sa;Password=Sai@123;TrustServerCertificate=True"
+  },
+  "Jwt": {
+    "Key": "<32+ character random string>",
+    "Issuer": "OrderManagement",
+    "Audience": "OrderManagement"
+  },
+  "Admin": {
+    "Email": "<admin-email>",
+    "Password": "<Admin-password-1>"
+  },
+  "Database": { "SkipMigrate": "true" },
+  "profiles": {
+    "OrderManagement.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61923;http://localhost:61924"
+    }
+  }
+}
